@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+  --brightOrange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+  --transparentWhite: hsla(0, 0%, 100%, 0.75);
+  --veryLightGray: hsl(0, 0%, 95%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 375px;
+  height: 1350px;
+  padding: 1rem;
+}
+
+.card h1 {
+  font-size: 2.6rem;
+  letter-spacing: +1px;
+  font-family: 'Big shoulders Display';
+  color: var(--veryLightGray);
+}
+
+.card p {
+  padding: 2rem 0rem;
+  font-family: 'Lexend Deca';
+  font-size: 0.9rem;
+  color: var(--transparentWhite);
+  letter-spacing: 1px;
+  line-height: 2;
+  margin-bottom: 1rem;
+}
+
+.card1 {
+  height: 33%;
+  background-color: var(--brightOrange);
+  padding: 3rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card1 .icon {
+  background-image: url(./images/icon-sedans.svg);
+  background-repeat: no-repeat;
+  width: 6rem;
+  height: 5rem;
+}
+
+.card1 a {
+  text-decoration: none;
+  font-family: 'lexend deca';
+  color: var(--brightOrange);
+  background-color: var(--veryLightGray);
+  padding: 1rem 2.2rem;
+  border-radius: 25px;
+}
+
+.card1 a:hover {
+  border: var(--veryLightGray) solid 1px;
+  background-color: var(--brightOrange);
+  color: var(--veryLightGray);
+}
+
+.card2 {
+  height: 33%;
+  background-color: var(--darkCyan);
+  padding: 3rem;
+}
+
+.card2 .icon {
+  background-image: url(./images/icon-suvs.svg);
+  background-repeat: no-repeat;
+  width: 6rem;
+  height: 5rem;
+}
+
+.card2 a {
+  text-decoration: none;
+  font-family: 'lexend deca';
+  color: var(--darkCyan);
+  background-color: var(--veryLightGray);
+  padding: 1rem 2.2rem;
+  border-radius: 25px;
+}
+
+.card2 a:hover {
+  border: var(--veryLightGray) solid 1px;
+  background-color: var(--darkCyan);
+  color: var(--veryLightGray);
+}
+
+.card3 {
+  height: 34%;
+  background-color: var(--veryDarkCyan);
+  padding: 3rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card3 .icon {
+  background-image: url(./images/icon-luxury.svg);
+  background-repeat: no-repeat;
+  width: 6rem;
+  height: 5rem;
+}
+
+.card3 a {
+  text-decoration: none;
+  font-family: 'lexend deca';
+  color: var(--veryDarkCyan);
+  background-color: var(--veryLightGray);
+  padding: 1rem 2.2rem;
+  border-radius: 25px;
+}
+
+.card3 a:hover {
+  border: var(--veryLightGray) solid 1px;
+  background-color: var(--veryDarkCyan);
+  color: var(--veryLightGray);
+}
+
+@media (min-width: 1140px) {
+  .card {
+    height: 60vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+  }
+  .card1 {
+    height: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+  .card2 {
+    height: 100%;
+  }
+  .card3 {
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+}
