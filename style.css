@@ -138,7 +138,7 @@ body {
 @media (min-width: 1140px) {
   .card {
     height: 60vh;
-    width: 80vw;
+    width: 70vw;
     display: flex;
     justify-content: center;
     align-items: center;
